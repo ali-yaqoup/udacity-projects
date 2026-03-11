@@ -1,0 +1,40 @@
+John Smith
+123 Main Street, San Francisco, CA 94102
+(415) 555-0123 | john.smith@email.com | LinkedIn: linkedin.com/in/johnsmith
+
+Professional Summary
+Experienced software developer looking for new opportunities. I have worked on various projects and have good technical skills.
+
+Work Experience
+Software Developer | Tech Solutions Inc. | San Francisco, CA | 2020 - Present
+- Write code for different applications
+- Work with team members on projects
+- Fix bugs and issues
+- Attend meetings and planning sessions
+
+Junior Developer | Digital Apps Co. | San Francisco, CA | 2018 - 2020
+- Helped develop web applications
+- Assisted senior developers
+- Learned new technologies
+- Wrote unit tests
+
+Education
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2018
+
+Skills
+- Programming: Python, Java, JavaScript
+- Databases: MySQL, MongoDB
+- Tools: Git, JIRA
+- Web: HTML, CSS, React
+
+Projects
+E-commerce Website
+- Created an online shopping platform
+- Used React and Node.js
+- Connected to payment system
+
+Mobile App
+- Developed iOS application
+- Used Swift programming language
+- Published on App Store

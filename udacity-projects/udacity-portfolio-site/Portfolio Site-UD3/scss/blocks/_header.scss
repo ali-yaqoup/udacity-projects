@@ -1,0 +1,201 @@
+// Header block with BEM methodology
+@use '../utils/utils' as *;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $border-color;
+  z-index: 1000;
+  transition: $transition-base;
+  
+  &--scrolled {
+    height: $header-height-scrolled;
+    box-shadow: $shadow-md;
+  }
+
+  &__container {
+    @include container;
+    @include flex-between;
+    height: 100%;
+  }
+
+  &__logo {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
+    text-decoration: none;
+    transition: $transition-fast;
+    
+    &:hover {
+      color: $secondary-color;
+      transform: scale(1.05);
+    }
+  }
+
+  &__nav {
+    @include flex-center;
+    gap: $spacing-xl;
+    
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__nav-list {
+    @include flex-center;
+    gap: $spacing-lg;
+    list-style: none;
+  }
+
+  &__nav-item {
+    position: relative;
+  }
+
+  &__nav-link {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    color: $text-primary;
+    text-decoration: none;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius;
+    transition: $transition-fast;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $primary-color;
+      transform: translateX(-50%);
+      transition: $transition-fast;
+    }
+    
+    &:hover {
+      color: $primary-color;
+      background-color: rgba(37, 99, 235, 0.1);
+      
+      &::after {
+        width: 80%;
+      }
+    }
+    
+    &:focus-visible {
+      @include focus-visible;
+    }
+  }
+
+  &__nav-link--active {
+    color: $primary-color;
+    
+    &::after {
+      width: 80%;
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: $spacing-xs;
+    padding: $spacing-sm;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    @include mobile {
+      display: flex;
+    }
+    
+    &:focus-visible {
+      @include focus-visible;
+    }
+  }
+
+  &__menu-line {
+    width: 24px;
+    height: 2px;
+    background-color: $text-primary;
+    transition: $transition-fast;
+    
+    .header--menu-open & {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+
+  &__mobile-nav {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    right: 0;
+    background-color: $background-primary;
+    border-bottom: 1px solid $border-color;
+    transform: translateY(-100%);
+    transition: $transition-base;
+    box-shadow: $shadow-lg;
+    
+    .header--menu-open & {
+      transform: translateY(0);
+    }
+    
+    @include mobile {
+      display: block;
+    }
+    
+    @include tablet {
+      display: none;
+    }
+    
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__mobile-nav-list {
+    padding: $spacing-lg;
+    list-style: none;
+  }
+
+  &__mobile-nav-item {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__mobile-nav-link {
+    display: block;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $text-primary;
+    text-decoration: none;
+    padding: $spacing-md;
+    border-radius: $border-radius;
+    transition: $transition-fast;
+    
+    &:hover {
+      color: $primary-color;
+      background-color: rgba(37, 99, 235, 0.1);
+    }
+    
+    &:focus-visible {
+      @include focus-visible;
+    }
+  }
+}

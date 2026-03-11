@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game Application</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" data-cy="nav-home">Home</a></li>
+                <li><a href="#card-sets" data-cy="nav-card-sets">Card Set</a></li>
+                <li><a href="#about" data-cy="nav-about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h1>Welcome to Card Game</h1>
+            <p>Create and manage your card sets</p>
+        </section>
+
+        <section id="card-sets" class="page">
+            <h1>Card Sets</h1>
+            <div id="card-sets-container">
+                <!-- Card sets will be displayed here -->
+            </div>
+            <button id="create-set-btn" data-cy="create-set-btn">Create New Set</button>
+        </section>
+
+        <section id="about" class="page">
+            <div class="aboutContainer">
+                <h1>About</h1>
+                <p>This is a card game application built with modern web technologies.</p>
+            </div>
+        </section>
+
+        <!-- Create Set Modal -->
+        <div id="create-set-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Create New Set</h2>
+                <form id="create-set-form" data-cy="create-set-form">
+                    <input type="text" id="set-name" placeholder="Set Name" data-cy="set-name-input" required>
+                    <button type="submit" data-cy="create-set-submit">Create Set</button>
+                </form>
+                <div id="create-set-error" class="error" data-cy="create-set-error"></div>
+            </div>
+        </div>
+
+        <!-- Add Card Modal -->
+        <div id="add-card-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Card to Set</h2>
+                <form id="add-card-form" data-cy="add-card-form">
+                    <input type="text" id="card-front" placeholder="Card Front" data-cy="card-front-input" required>
+                    <input type="text" id="card-back" placeholder="Card Back" data-cy="card-back-input" required>
+                    <button type="submit" data-cy="add-card-submit">Add Card</button>
+                </form>
+                <div id="add-card-error" class="error" data-cy="add-card-error"></div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>

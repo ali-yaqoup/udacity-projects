@@ -1,0 +1,8 @@
+// Blocks main file - imports all block components
+@use '../utils/utils' as *;
+@use 'header';
+@use 'hero';
+@use 'about';
+@use 'projects';
+@use 'contact';
+@use 'footer';

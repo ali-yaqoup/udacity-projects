@@ -1,0 +1,201 @@
+// About section block
+@use '../utils/utils' as *;
+.about {
+  padding: $section-spacing 0;
+  background-color: $background-secondary;
+  
+  &__container {
+    @include container;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: $spacing-2xl;
+    align-items: center;
+    
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: $spacing-2xl;
+    }
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+    }
+  }
+
+  &__image-section {
+    position: relative;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-xl;
+    transition: $transition-base;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    // Placeholder image - replace with actual image
+    background: linear-gradient(45deg, $primary-color, $accent-color);
+    aspect-ratio: 1;
+    
+    // For demo purposes - creating a colored placeholder
+    &::before {
+      content: '👨‍💻';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      opacity: 0.8;
+    }
+  }
+
+  &__image-decoration {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  &__text-section {
+    @include slide-up(0.6s);
+  }
+
+  &__title {
+    @include heading-2;
+    color: $text-primary;
+    margin-bottom: $spacing-lg;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: $primary-color;
+    }
+  }
+
+  &__subtitle {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
+    color: $primary-color;
+    margin-bottom: $spacing-md;
+  }
+
+  &__description {
+    @include body-text;
+    margin-bottom: $spacing-lg;
+    
+    &:last-of-type {
+      margin-bottom: $spacing-xl;
+    }
+  }
+
+  &__info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-lg;
+    margin-bottom: $spacing-xl;
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info-item {
+    @include card;
+    padding: $spacing-lg;
+    text-align: center;
+    transition: $transition-base;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+  }
+
+  &__info-label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $text-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__info-value {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+  }
+
+  &__skills {
+    margin-top: $spacing-xl;
+  }
+
+  &__skills-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  &__skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  &__skill-tag {
+    display: inline-block;
+    padding: $spacing-xs $spacing-md;
+    background-color: $primary-color;
+    color: $text-light;
+    border-radius: $border-radius;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    transition: $transition-fast;
+    
+    &:hover {
+      background-color: $secondary-color;
+      transform: translateY(-1px);
+    }
+  }
+
+  &__cta {
+    margin-top: $spacing-xl;
+  }
+
+  &__cta-button {
+    @include button-primary;
+    margin-right: $spacing-md;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &--secondary {
+      @include button-secondary;
+    }
+  }
+}

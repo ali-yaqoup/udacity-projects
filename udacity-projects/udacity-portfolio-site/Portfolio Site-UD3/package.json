@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Professional portfolio website built with SCSS and BEM methodology",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "sass scss/main.scss dist/main.css --style=compressed",
+    "watch-css": "sass --watch scss/main.scss:dist/main.css --style=compressed",
+    "dev": "npm run watch-css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "keywords": ["portfolio", "scss", "bem", "responsive"],
+  "author": "",
+  "license": "MIT"
+}

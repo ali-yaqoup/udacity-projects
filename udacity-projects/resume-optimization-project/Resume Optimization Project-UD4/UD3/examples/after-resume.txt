@@ -1,0 +1,69 @@
+John Smith
+Senior Software Engineer | Cloud & Full-Stack Development
+(415) 555-0123 | john.smith@email.com | LinkedIn: linkedin.com/in/johnsmith
+San Francisco, CA | Portfolio: johnsmith.dev | GitHub: github.com/johnsmith
+
+Professional Summary
+Results-driven Senior Software Engineer with 5+ years of experience developing scalable applications and leading technical initiatives. Proficient in Python, Java, and JavaScript with expertise in cloud platforms, microservices architecture, and agile methodologies. Passionate about optimizing performance and mentoring development teams to deliver high-quality enterprise solutions.
+
+Professional Experience
+
+Software Engineer | Tech Solutions Inc. | San Francisco, CA | 2020 - Present
+• Designed and developed scalable microservices architecture serving 100,000+ daily users, improving system reliability by 40%
+• Led cross-functional team of 5 developers in implementing CI/CD pipelines using Jenkins and Docker, reducing deployment time by 60%
+• Optimized database queries and implemented caching strategies, decreasing API response times from 500ms to 150ms
+• Mentored 3 junior developers on best practices for code quality, testing, and cloud architecture
+• Collaborated with product managers and UX designers to deliver 15+ features using React and Node.js
+• Implemented comprehensive testing suite achieving 95% code coverage, reducing production bugs by 75%
+• Managed AWS infrastructure including EC2, S3, and RDS services, ensuring 99.9% uptime
+
+Junior Software Developer | Digital Apps Co. | San Francisco, CA | 2018 - 2020
+• Developed responsive web applications using React and Node.js, increasing user engagement by 35%
+• Assisted senior developers in migrating monolithic application to microservices architecture
+• Created and maintained unit tests using Jest and pytest, improving code quality metrics
+• Participated in agile development processes including daily standups, sprint planning, and retrospectives
+• Contributed to open-source projects with 200+ GitHub stars and active community engagement
+
+Education
+
+Bachelor of Science in Computer Science
+University of California, Berkeley | Graduated 2018
+• GPA: 3.7/4.0 | Dean's List 2017-2018
+• Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems
+• Senior Project: Distributed file system implementation using Python and AWS
+
+Technical Skills
+
+Programming Languages: Python, Java, JavaScript, TypeScript, SQL, Swift
+Cloud Platforms: AWS (EC2, S3, RDS, Lambda), Azure, GCP
+Frameworks & Libraries: React, Node.js, Spring Boot, Django, Flask
+Databases: PostgreSQL, MySQL, MongoDB, Redis
+DevOps & Tools: Docker, Kubernetes, Jenkins, Git, JIRA, Terraform
+Methodologies: Agile, Scrum, CI/CD, Test-Driven Development
+
+Certifications
+
+• AWS Certified Solutions Architect - Professional (2023)
+• Google Cloud Professional Developer (2022)
+• Certified ScrumMaster (CSM) (2021)
+
+Projects
+
+E-Commerce Platform | Full-Stack Development
+• Architected and deployed scalable e-commerce platform using React, Node.js, and PostgreSQL
+• Implemented secure payment processing with Stripe, handling $500K+ in monthly transactions
+• Designed RESTful APIs serving 10,000+ concurrent users with 99.95% uptime
+• Utilized Docker containerization and AWS ECS for deployment, reducing infrastructure costs by 30%
+
+Mobile Task Manager | iOS Development
+• Developed native iOS application using Swift and Core Data for offline functionality
+• Implemented push notifications and real-time sync, achieving 4.8/5 App Store rating
+• Published on App Store with 50,000+ downloads and 4.5-star average rating
+• Integrated with Firebase for authentication and cloud storage
+
+Professional Development
+
+• Speaker at Bay Area Tech Conference 2023: "Microservices Best Practices"
+• Contributor to open-source projects with 500+ GitHub followers
+• Completed Advanced Cloud Architecture course on Coursera (2023)
+• Active member of local Python and JavaScript meetups

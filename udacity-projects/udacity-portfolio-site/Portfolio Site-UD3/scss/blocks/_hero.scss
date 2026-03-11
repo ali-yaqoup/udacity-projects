@@ -1,0 +1,161 @@
+// Hero section block
+@use '../utils/utils' as *;
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.3;
+  }
+
+  &__container {
+    @include container;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+    @include slide-up(0.8s);
+  }
+
+  &__title {
+    font-size: clamp($font-size-3xl, 5vw, $font-size-4xl);
+    font-weight: $font-weight-bold;
+    color: $text-light;
+    margin-bottom: $spacing-lg;
+    line-height: $line-height-tight;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+    @include mobile {
+      font-size: $font-size-2xl;
+    }
+  }
+
+  &__subtitle {
+    font-size: clamp($font-size-lg, 3vw, $font-size-xl);
+    font-weight: $font-weight-normal;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: $spacing-xl;
+    line-height: $line-height-base;
+    
+    @include mobile {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-base;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: $spacing-2xl;
+    line-height: $line-height-base;
+    
+    @include mobile {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__buttons {
+    @include flex-center;
+    gap: $spacing-lg;
+    flex-wrap: wrap;
+    @include fade-in(1s);
+    animation-delay: 0.3s;
+    
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    min-width: 140px;
+    
+    &--primary {
+      @include button-primary;
+    }
+    
+    &--secondary {
+      @include button-secondary;
+      border-color: $text-light;
+      color: $text-light;
+      
+      &:hover:not(:disabled) {
+        background-color: $text-light;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__scroll-indicator {
+    position: absolute;
+    bottom: $spacing-xl;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    
+    @include mobile {
+      bottom: $spacing-lg;
+    }
+  }
+
+  &__scroll-icon {
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      transform: translateX(-50%);
+      animation: scroll-wheel 2s infinite;
+    }
+  }
+}
+
+// Animations
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@keyframes scroll-wheel {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+}

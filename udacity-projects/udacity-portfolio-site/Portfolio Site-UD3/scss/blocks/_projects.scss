@@ -1,0 +1,243 @@
+// Projects section block
+@use '../utils/utils' as *;
+.projects {
+  padding: $section-spacing 0;
+  background-color: $background-primary;
+  
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-2xl;
+    @include slide-up(0.6s);
+  }
+
+  &__title {
+    @include heading-2;
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  &__subtitle {
+    font-size: $font-size-xl;
+    color: $text-secondary;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__filter {
+    @include flex-center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-2xl;
+    flex-wrap: wrap;
+    
+    @include mobile {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__filter-button {
+    padding: $spacing-sm $spacing-lg;
+    background-color: transparent;
+    color: $text-secondary;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+    transition: $transition-fast;
+    
+    &:hover {
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+    
+    &--active {
+      background-color: $primary-color;
+      color: $text-light;
+      border-color: $primary-color;
+    }
+    
+    &:focus-visible {
+      @include focus-visible;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: $spacing-2xl;
+    
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: $spacing-xl;
+    }
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: $spacing-lg;
+    }
+  }
+
+  &__card {
+    @include card;
+    background-color: $background-primary;
+    border: 1px solid $border-color;
+    overflow: hidden;
+    transition: $transition-base;
+    @include slide-up(0.8s);
+    
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: $shadow-xl;
+    }
+  }
+
+  &__card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    
+    // Placeholder gradient background
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    // Demo content
+    &::before {
+      content: '🚀';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      opacity: 0.8;
+    }
+  }
+
+  &__card-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    transition: $transition-fast;
+    
+    .projects__card:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__card-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flex-center;
+    gap: $spacing-md;
+    opacity: 0;
+    transition: $transition-fast;
+    
+    .projects__card:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__card-link {
+    width: 40px;
+    height: 40px;
+    background-color: $text-light;
+    border-radius: 50%;
+    @include flex-center;
+    color: $primary-color;
+    text-decoration: none;
+    transition: $transition-fast;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: $text-light;
+      transform: scale(1.1);
+    }
+    
+    &:focus-visible {
+      @include focus-visible;
+    }
+  }
+
+  &__card-content {
+    padding: $spacing-lg;
+  }
+
+  &__card-title {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__card-description {
+    @include body-text;
+    margin-bottom: $spacing-md;
+    font-size: $font-size-sm;
+  }
+
+  &__card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+    margin-bottom: $spacing-md;
+  }
+
+  &__card-tag {
+    padding: $spacing-xs $spacing-sm;
+    background-color: $background-secondary;
+    color: $text-secondary;
+    border-radius: $border-radius;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &__card-footer {
+    @include flex-between;
+    padding-top: $spacing-md;
+    border-top: 1px solid $border-color;
+  }
+
+  &__card-date {
+    font-size: $font-size-sm;
+    color: $text-secondary;
+  }
+
+  &__card-status {
+    padding: $spacing-xs $spacing-sm;
+    background-color: #10b981;
+    color: $text-light;
+    border-radius: $border-radius;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    
+    &--in-progress {
+      background-color: #f59e0b;
+    }
+    
+    &--planned {
+      background-color: #6b7280;
+    }
+  }
+
+  &__load-more {
+    text-align: center;
+    margin-top: $spacing-2xl;
+  }
+
+  &__load-more-button {
+    @include button-secondary;
+    min-width: 160px;
+  }
+}

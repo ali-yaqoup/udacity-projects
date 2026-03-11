@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website showcasing projects, skills, and contact information">
+    <meta name="keywords" content="portfolio, web developer, projects, skills, contact">
+    <meta name="author" content="Your Name">
+    <title>Portfolio - Professional Web Developer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="dist/main.css" as="style">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dist/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Portfolio - Professional Web Developer">
+    <meta property="og:description" content="Professional portfolio website showcasing projects, skills, and contact information">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Professional Web Developer">
+    <meta name="twitter:description" content="Professional portfolio website showcasing projects, skills, and contact information">
+    <meta name="twitter:image" content="assets/images/twitter-card.jpg">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
+    <!-- Header Navigation -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <a href="#home" class="header__logo" aria-label="Home">Portfolio</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="header__nav" role="navigation" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#home" class="header__nav-link header__nav-link--active">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#projects" class="header__nav-link">Projects</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contact" class="header__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="header__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="header__mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <ul class="header__mobile-nav-list">
+                <li class="header__mobile-nav-item">
+                    <a href="#home" class="header__mobile-nav-link">Home</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="#about" class="header__mobile-nav-link">About</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="#projects" class="header__mobile-nav-link">Projects</a>
+                </li>
+                <li class="header__mobile-nav-item">
+                    <a href="#contact" class="header__mobile-nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" role="banner">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Hi, I'm a Professional Web Developer</h1>
+                    <p class="hero__subtitle">Creating beautiful, functional, and user-centered digital experiences</p>
+                    <p class="hero__description">
+                        Passionate about clean code, modern design, and building web applications that make a difference. 
+                        Specializing in responsive design, accessibility, and performance optimization.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="hero__button hero__button--primary">View Projects</a>
+                        <a href="#contact" class="hero__button hero__button--secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="hero__scroll-indicator">
+                <div class="hero__scroll-icon" aria-hidden="true"></div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__image-section">
+                        <div class="about__image-wrapper">
+                            <div class="about__image" alt="Professional headshot" aria-label="Profile picture"></div>
+                        </div>
+                        <div class="about__image-decoration" aria-hidden="true"></div>
+                    </div>
+                    
+                    <div class="about__text-section">
+                        <h2 id="about-title" class="about__title">About Me</h2>
+                        <h3 class="about__subtitle">Web Developer & UI/UX Enthusiast</h3>
+                        
+                        <p class="about__description">
+                            I'm a passionate web developer with expertise in creating modern, responsive, and accessible web applications. 
+                            With a strong foundation in both frontend and backend technologies, I bring ideas to life through clean code 
+                            and thoughtful design.
+                        </p>
+                        
+                        <p class="about__description">
+                            My approach combines technical excellence with creative problem-solving, ensuring that every project not only 
+                            looks great but also delivers exceptional user experiences. I stay current with the latest industry trends 
+                            and best practices to deliver cutting-edge solutions.
+                        </p>
+                        
+                        <div class="about__info-grid">
+                            <div class="about__info-item">
+                                <div class="about__info-label">Experience</div>
+                                <div class="about__info-value">5+ Years</div>
+                            </div>
+                            <div class="about__info-item">
+                                <div class="about__info-label">Projects</div>
+                                <div class="about__info-value">50+ Completed</div>
+                            </div>
+                            <div class="about__info-item">
+                                <div class="about__info-label">Clients</div>
+                                <div class="about__info-value">30+ Happy</div>
+                            </div>
+                            <div class="about__info-item">
+                                <div class="about__info-label">Technologies</div>
+                                <div class="about__info-value">15+ Stack</div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__skills">
+                            <h3 class="about__skills-title">Core Skills</h3>
+                            <div class="about__skills-list">
+                                <span class="about__skill-tag">HTML5</span>
+                                <span class="about__skill-tag">CSS3/SCSS</span>
+                                <span class="about__skill-tag">JavaScript</span>
+                                <span class="about__skill-tag">React</span>
+                                <span class="about__skill-tag">Node.js</span>
+                                <span class="about__skill-tag">Responsive Design</span>
+                                <span class="about__skill-tag">Accessibility</span>
+                                <span class="about__skill-tag">Performance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about__cta">
+                            <a href="#contact" class="about__cta-button">Let's Work Together</a>
+                            <a href="#projects" class="about__cta-button about__cta-button--secondary">View My Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+            <div class="projects__container">
+                <div class="projects__header">
+                    <h2 id="projects-title" class="projects__title">Featured Projects</h2>
+                    <p class="projects__subtitle">A selection of my recent work showcasing various skills and technologies</p>
+                </div>
+                
+                <!-- Project Filter -->
+                <div class="projects__filter" role="group" aria-label="Filter projects">
+                    <button class="projects__filter-button projects__filter-button--active" data-filter="all">All</button>
+                    <button class="projects__filter-button" data-filter="web">Web Design</button>
+                    <button class="projects__filter-button" data-filter="app">Applications</button>
+                    <button class="projects__filter-button" data-filter="ui">UI/UX</button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects__grid">
+                    <!-- Project Card 1 -->
+                    <article class="projects__card" data-category="web">
+                        <div class="projects__card-image">
+                            <div class="projects__card-image-overlay"></div>
+                            <div class="projects__card-links">
+                                <a href="#" class="projects__card-link" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="projects__card-link" aria-label="View source code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__card-content">
+                            <h3 class="projects__card-title">E-Commerce Platform</h3>
+                            <p class="projects__card-description">
+                                A modern e-commerce platform with advanced filtering, cart functionality, and payment integration.
+                            </p>
+                            <div class="projects__card-tags">
+                                <span class="projects__card-tag">React</span>
+                                <span class="projects__card-tag">Node.js</span>
+                                <span class="projects__card-tag">MongoDB</span>
+                            </div>
+                            <div class="projects__card-footer">
+                                <span class="projects__card-date">2024</span>
+                                <span class="projects__card-status">Completed</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project Card 2 -->
+                    <article class="projects__card" data-category="app">
+                        <div class="projects__card-image">
+                            <div class="projects__card-image-overlay"></div>
+                            <div class="projects__card-links">
+                                <a href="#" class="projects__card-link" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="projects__card-link" aria-label="View source code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__card-content">
+                            <h3 class="projects__card-title">Task Management App</h3>
+                            <p class="projects__card-description">
+                                A collaborative task management application with real-time updates and team collaboration features.
+                            </p>
+                            <div class="projects__card-tags">
+                                <span class="projects__card-tag">Vue.js</span>
+                                <span class="projects__card-tag">Firebase</span>
+                                <span class="projects__card-tag">PWA</span>
+                            </div>
+                            <div class="projects__card-footer">
+                                <span class="projects__card-date">2024</span>
+                                <span class="projects__card-status projects__card-status--in-progress">In Progress</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project Card 3 -->
+                    <article class="projects__card" data-category="ui">
+                        <div class="projects__card-image">
+                            <div class="projects__card-image-overlay"></div>
+                            <div class="projects__card-links">
+                                <a href="#" class="projects__card-link" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="projects__card-link" aria-label="View source code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects__card-content">
+                            <h3 class="projects__card-title">Design System</h3>
+                            <p class="projects__card-description">
+                                A comprehensive design system with reusable components, guidelines, and documentation.
+                            </p>
+                            <div class="projects__card-tags">
+                                <span class="projects__card-tag">CSS</span>
+                                <span class="projects__card-tag">Storybook</span>
+                                <span class="projects__card-tag">Figma</span>
+                            </div>
+                            <div class="projects__card-footer">
+                                <span class="projects__card-date">2023</span>
+                                <span class="projects__card-status">Completed</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="projects__load-more">
+                    <button class="projects__load-more-button">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="contact__container">
+                <div class="contact__header">
+                    <h2 id="contact-title" class="contact__title">Get In Touch</h2>
+                    <p class="contact__subtitle">Have a project in mind? Let's discuss how we can work together</p>
+                </div>
+                
+                <div class="contact__content">
+                    <!-- Contact Information -->
+                    <div class="contact__info">
+                        <h3 class="contact__info-title">Let's Connect</h3>
+                        <p class="contact__info-description">
+                            I'm always interested in hearing about new projects and opportunities. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <ul class="contact__info-list">
+                            <li class="contact__info-item">
+                                <svg class="contact__info-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                <span class="contact__info-text">
+                                    <a href="mailto:hello@example.com" class="contact__info-link">hello@example.com</a>
+                                </span>
+                            </li>
+                            <li class="contact__info-item">
+                                <svg class="contact__info-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                                <span class="contact__info-text">+1 (555) 123-4567</span>
+                            </li>
+                            <li class="contact__info-item">
+                                <svg class="contact__info-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <span class="contact__info-text">San Francisco, CA</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- Social Links -->
+                        <div class="contact__social">
+                            <h4 class="contact__social-title">Follow Me</h4>
+                            <div class="contact__social-links">
+                                <a href="#" class="contact__social-link" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="contact__social-link" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="contact__social-link" aria-label="Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <form class="contact__form" action="#" method="POST" novalidate>
+                        <div class="contact__form-group">
+                            <label for="name" class="contact__form-label">
+                                Name <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="contact__form-input" 
+                                required 
+                                aria-required="true"
+                                placeholder="Your name"
+                            >
+                            <div class="contact__form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label for="email" class="contact__form-label">
+                                Email <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="contact__form-input" 
+                                required 
+                                aria-required="true"
+                                placeholder="your.email@example.com"
+                            >
+                            <div class="contact__form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label for="subject" class="contact__form-label">Subject</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="contact__form-input"
+                                placeholder="Project inquiry"
+                            >
+                            <div class="contact__form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label for="message" class="contact__form-label">
+                                Message <span class="required" aria-label="required">*</span>
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="contact__form-textarea" 
+                                required 
+                                aria-required="true"
+                                placeholder="Tell me about your project..."
+                                rows="5"
+                            ></textarea>
+                            <div class="contact__form-error" role="alert"></div>
+                        </div>
+                        
+                        <button type="submit" class="contact__form-button">
+                            Send Message
+                        </button>
+                        
+                        <div class="contact__form-success" style="display: none;" role="alert">
+                            Thank you for your message! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__content">
+                <!-- Brand Section -->
+                <div class="footer__section footer__section--brand">
+                    <div class="footer__brand">
+                        <a href="#home" class="footer__logo">Portfolio</a>
+                        <p class="footer__description">
+                            Creating exceptional digital experiences through thoughtful design and clean code. 
+                            Let's build something amazing together.
+                        </p>
+                        <div class="footer__social-links">
+                            <a href="#" class="footer__social-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <nav aria-label="Footer navigation">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#home" class="footer__nav-link">Home</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#about" class="footer__nav-link">About</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#projects" class="footer__nav-link">Projects</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#contact" class="footer__nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Services</h3>
+                    <nav aria-label="Services navigation">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Web Design</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Development</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">UI/UX Design</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">Consulting</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <ul class="footer__contact-info">
+                        <li class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span class="footer__contact-text">
+                                <a href="mailto:hello@example.com" class="footer__contact-link">hello@example.com</a>
+                            </span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span class="footer__contact-text">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                            </svg>
+                            <span class="footer__contact-text">San Francisco, CA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Portfolio. All rights reserved.</p>
+                </div>
+                <div class="footer__bottom-links">
+                    <a href="#" class="footer__bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer__bottom-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button class="footer__back-to-top" aria-label="Back to top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+            </svg>
+        </button>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
