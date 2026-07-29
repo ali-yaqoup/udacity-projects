@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output — should not be tracked
+dist/
+build/
+.parcel-cache/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Environment & secrets
+.env
+
+# Test artifacts
+cypress/videos/
+cypress/screenshots/
+
+# IDE
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
