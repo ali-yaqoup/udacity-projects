@@ -1,1 +1,63 @@
-IyBVZGFjaXR5IFByb2plY3RzIFBvcnRmb2xpbwoKQSBjb2xsZWN0aW9uIG9mIGZvdXIgcHJvamVjdHMgY29tcGxldGVkIGFjcm9zcyBkaWZmZXJlbnQgVWRhY2l0eSBjb3Vyc2VzLCByYW5naW5nIGZyb20gc3RhdGljIEhUTUwvQ1NTIHdlYnNpdGVzIHRvIGEgUHl0aG9uLWJhc2VkIHJlc3VtZSBhbmFseXNpcyB0b29sIGFuZCBhIEphdmFTY3JpcHQgY2FyZCBnYW1lIHdpdGggYXV0b21hdGVkIHRlc3RpbmcuCgojIyBQcm9qZWN0cwoKIyMjIFVEMSDigJQgVWRhY2l0eSBXZWJzaXRlIFByb2plY3QgKGB1ZGFjaXR5LXByb2plY3RzL3VkYWNpdHktd2Vic2l0ZS1wcm9qZWN0L1VEMS9gKQoKQSBzdGF0aWMgbXVsdGktcGFnZSB3ZWJzaXRlIGJ1aWx0IHdpdGggSFRNTCBhbmQgQ1NTLiBDb250YWlucyBhbiBgaW5kZXguaHRtbGAsIGEgYGNzcy9gIGRpcmVjdG9yeSwgYW4gYGltYWdlcy9gIGRpcmVjdG9yeSwgYW5kIGEgYHBhZ2VzL2Agc3ViZGlyZWN0b3J5LgoKKipUbyBydW46KiogT3BlbiBgVUQxL2luZGV4Lmh0bWxgIGRpcmVjdGx5IGluIGEgYnJvd3Nlci4KCi0tLQoKIyMjIFVEMyDigJQgUG9ydGZvbGlvIFNpdGUgKGB1ZGFjaXR5LXByb2plY3RzL3VkYWNpdHktcG9ydGZvbGlvLXNpdGUvUG9ydGZvbGlvIFNpdGUtVUQzL2ApCgpBIHBlcnNvbmFsIHBvcnRmb2xpbyB3ZWJzaXRlIGJ1aWx0IHdpdGggU0NTUyBhbmQgdGhlIEJFTSBtZXRob2RvbG9neS4gU2FzcyBpcyBjb21waWxlZCB0byBhIHNpbmdsZSBjb21wcmVzc2VkIENTUyBmaWxlIGluIGBkaXN0L2AuCgoqKlRlY2g6KiogSFRNTCwgU0NTUyAoU2FzcyAxLjY5LjUpLCBCRU0KCmBgYGJhc2gKY2QgInVkYWNpdHktcHJvamVjdHMvdWRhY2l0eS1wb3J0Zm9saW8tc2l0ZS9Qb3J0Zm9saW8gU2l0ZS1VRDMiCm5wbSBpbnN0YWxsCm5wbSBydW4gZGV2ICAgICAgICMgd2F0Y2ggYW5kIGNvbXBpbGUgU0NTUwpucG0gcnVuIGJ1aWxkLWNzcyAjIG9uZS1vZmYgY29tcGlsZQpgYGAKCi0tLQoKIyMjIFVENCDigJQgUmVzdW1lIE9wdGltaXphdGlvbiBQcm9qZWN0IChgdWRhY2l0eS1wcm9qZWN0cy9yZXN1bWUtb3B0aW1pemF0aW9uLXByb2plY3QvUmVzdW1lIE9wdGltaXphdGlvbiBQcm9qZWN0LVVENC9VRDMvYCkKCkEgUHl0aG9uIHRvb2wgZm9yIGFuYWx5c2luZyBhbmQgZW5oYW5jaW5nIHJlc3VtZXMuIFJlYWRzIFBERiBhbmQgRE9DWCBmaWxlcywgcGVyZm9ybXMgTkxQLWJhc2VkIHRleHQgYW5hbHlzaXMsIGFuZCBwcm9kdWNlcyBzY29yaW5nIG9yIHN1Z2dlc3Rpb25zLiBDb250YWlucyBgZG9jcy9gLCBgZXhhbXBsZXMvYCwgYHN1Ym1pc3Npb24vYCwgYW5kIGB0b29scy9gIHN1YmRpcmVjdG9yaWVzLgoKKipUZWNoOioqIFB5dGhvbiAzLjgrLCBOTFRLLCBzcGFDeSwgdGV4dHN0YXQsIFB5UERGMiwgcHl0aG9uLWRvY3gsIHBhbmRhcywgbnVtcHksIEJlYXV0aWZ1bFNvdXA0LCBDbGljawoKYGBgYmFzaApwaXAgaW5zdGFsbCAtciByZXF1aXJlbWVudHMudHh0CmBgYAoKLS0tCgojIyMgVUQ3IOKAlCBDYXJkIEdhbWUgd2l0aCBTaHVmZmxlIChgdWRhY2l0eS1wcm9qZWN0cy91ZGFjaXR5LXByb2plY3QtdWQ3L1VELTcvYCkKCkEgYnJvd3Nlci1iYXNlZCBjYXJkIGdhbWUgYXBwbGljYXRpb24gYnVpbHQgd2l0aCB2YW5pbGxhIEphdmFTY3JpcHQgKEVTIG1vZHVsZXMpLiBJbXBsZW1lbnRzIGEgc2h1ZmZsZSBhbGdvcml0aG0gKGBTaHVmZmxlLmpzYCksIGNhcmQgcmVuZGVyaW5nIHV0aWxpdGllcyAoYHV0aWxpdHlSZW5kZXJGdW5jdGlvbnMuanNgKSwgYW5kIGEgZnVsbCBnYW1lIGxvb3AgKGBhcHAuanNgKS4gSW5jbHVkZXMgYSBNb2NoYS9DaGFpIHVuaXQtdGVzdCBzdWl0ZSBhbmQgQ3lwcmVzcyBlbmQtdG8tZW5kIHRlc3RzLCBhbGwgb3JjaGVzdHJhdGVkIHdpdGggR3VscCBhbmQgYnVuZGxlZCB3aXRoIFBhcmNlbC4KCioqVGVjaDoqKiBKYXZhU2NyaXB0IChFUyBtb2R1bGVzKSwgUGFyY2VsIDIuMTYuNCwgR3VscCA1LCBNb2NoYSAxMSwgQ2hhaSA2LCBDeXByZXNzIDE1LCBUeXBlU2NyaXB0IDUuOQoKYGBgYmFzaApjZCAidWRhY2l0eS1wcm9qZWN0cy91ZGFjaXR5LXByb2plY3QtdWQ3L1VELTciCm5wbSBpbnN0YWxsCm5wbSBydW4gZGV2ICAgICAgICMgZ3VscCB3YXRjaCAoUGFyY2VsIGRldiBidWlsZCkKbnBtIHJ1biBidWlsZCAgICAgIyBwcm9kdWN0aW9uIGJ1aWxkCm5wbSB0ZXN0ICAgICAgICAgICMgTW9jaGEgdW5pdCB0ZXN0cwpucG0gcnVuIHRlc3Q6Y3lwcmVzcyAgIyBDeXByZXNzIGUyZSB0ZXN0cwpgYGAKCi0tLQoKIyMgQ2xvbmUKCmBgYGJhc2gKZ2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9hbGkteWFxb3VwL3VkYWNpdHktcHJvamVjdHMuZ2l0CmBgYAo=
+# Udacity Projects Portfolio
+
+A collection of four projects completed across different Udacity courses, ranging from static HTML/CSS websites to a Python-based resume analysis tool and a JavaScript card game with automated testing.
+
+## Projects
+
+### UD1 — Udacity Website Project (`udacity-projects/udacity-website-project/UD1/`)
+
+A static multi-page website built with HTML and CSS. Contains an `index.html`, a `css/` directory, an `images/` directory, and a `pages/` subdirectory.
+
+**To run:** Open `UD1/index.html` directly in a browser.
+
+---
+
+### UD3 — Portfolio Site (`udacity-projects/udacity-portfolio-site/Portfolio Site-UD3/`)
+
+A personal portfolio website built with SCSS and the BEM methodology. Sass is compiled to a single compressed CSS file in `dist/`.
+
+**Tech:** HTML, SCSS (Sass 1.69.5), BEM
+
+```bash
+cd "udacity-projects/udacity-portfolio-site/Portfolio Site-UD3"
+npm install
+npm run dev       # watch and compile SCSS
+npm run build-css # one-off compile
+```
+
+---
+
+### UD4 — Resume Optimization Project (`udacity-projects/resume-optimization-project/Resume Optimization Project-UD4/UD3/`)
+
+A Python tool for analysing and enhancing resumes. Reads PDF and DOCX files, performs NLP-based text analysis, and produces scoring or suggestions. Contains `docs/`, `examples/`, `submission/`, and `tools/` subdirectories.
+
+**Tech:** Python 3.8+, NLTK, spaCy, textstat, PyPDF2, python-docx, pandas, numpy, BeautifulSoup4, Click
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### UD7 — Card Game with Shuffle (`udacity-projects/udacity-project-ud7/UD-7/`)
+
+A browser-based card game application built with vanilla JavaScript (ES modules). Implements a shuffle algorithm (`Shuffle.js`), card rendering utilities (`utilityRenderFunctions.js`), and a full game loop (`app.js`). Includes a Mocha/Chai unit-test suite and Cypress end-to-end tests, all orchestrated with Gulp and bundled with Parcel.
+
+**Tech:** JavaScript (ES modules), Parcel 2.16.4, Gulp 5, Mocha 11, Chai 6, Cypress 15, TypeScript 5.9
+
+```bash
+cd "udacity-projects/udacity-project-ud7/UD-7"
+npm install
+npm run dev       # gulp watch (Parcel dev build)
+npm run build     # production build
+npm test          # Mocha unit tests
+npm run test:cypress  # Cypress e2e tests
+```
+
+---
+
+## Clone
+
+```bash
+git clone https://github.com/ali-yaqoup/udacity-projects.git
+```
