@@ -1,10 +1,10 @@
-﻿# Udacity Projects Portfolio
+# Udacity Projects Portfolio
 
 A collection of four projects completed across different Udacity courses, ranging from static HTML/CSS websites to a Python-based resume analysis tool and a JavaScript card game with automated testing.
 
 ## Projects
 
-### UD1 â€” Udacity Website Project (`udacity-projects/udacity-website-project/UD1/`)
+### UD1 — Udacity Website Project (`udacity-projects/udacity-website-project/UD1/`)
 
 A static multi-page website built with HTML and CSS. Contains an `index.html`, a `css/` directory, an `images/` directory, and a `pages/` subdirectory.
 
@@ -12,7 +12,7 @@ A static multi-page website built with HTML and CSS. Contains an `index.html`, a
 
 ---
 
-### UD3 â€” Portfolio Site (`udacity-projects/udacity-portfolio-site/Portfolio Site-UD3/`)
+### UD3 — Portfolio Site (`udacity-projects/udacity-portfolio-site/Portfolio Site-UD3/`)
 
 A personal portfolio website built with SCSS and the BEM methodology. Sass is compiled to a single compressed CSS file in `dist/`.
 
@@ -27,7 +27,7 @@ npm run build-css # one-off compile
 
 ---
 
-### UD4 â€” Resume Optimization Project (`udacity-projects/resume-optimization-project/Resume Optimization Project-UD4/UD3/`)
+### UD4 — Resume Optimization Project (`udacity-projects/resume-optimization-project/Resume Optimization Project-UD4/UD3/`)
 
 A Python tool for analysing and enhancing resumes. Reads PDF and DOCX files, performs NLP-based text analysis, and produces scoring or suggestions. Contains `docs/`, `examples/`, `submission/`, and `tools/` subdirectories.
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ---
 
-### UD7 â€” Card Game with Shuffle (`udacity-projects/udacity-project-ud7/UD-7/`)
+### UD7 — Card Game with Shuffle (`udacity-projects/udacity-project-ud7/UD-7/`)
 
 A browser-based card game application built with vanilla JavaScript (ES modules). Implements a shuffle algorithm (`Shuffle.js`), card rendering utilities (`utilityRenderFunctions.js`), and a full game loop (`app.js`). Includes a Mocha/Chai unit-test suite and Cypress end-to-end tests, all orchestrated with Gulp and bundled with Parcel.
 
@@ -67,3 +67,5 @@ git clone https://github.com/ali-yaqoup/udacity-projects.git
 Copyright © 2026 Ali Yaqoub. All rights reserved.
 
 This software and its contents are proprietary. Unauthorized copying, distribution, modification, or commercial use is prohibited without prior written permission from the copyright holder.
+
+See the [LICENSE](./LICENSE) file for the full notice.
